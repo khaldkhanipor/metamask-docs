@@ -59,9 +59,9 @@ Add the following code to `dist/index.html`:
 </html>
 ```
 
-#### Install and configure Webpack
+### 2. Install and configure Webpack
 
-Navigate to the root of your `simple-dapp` directory and run the following commands to initialize npm.
+Navigate to the root of your `simple-dapp` directory and run the following commands to initialize npm and install Webpack.
 
 ```bash 
 npm init -y && npm install --save-dev webpack webpack-cli
@@ -92,7 +92,7 @@ Then, edit `package.json` to include a build script:
 
 When you run `npm run build` from your terminal, Webpack bundles the content in `src/index.js` into `dist/main.js`, which is linked in `index.html`.
 
-### 2. Detect MetaMask
+### 3. Detect MetaMask
 
 Install the `@metamask/detect-provider` module in your project directory:
 
@@ -140,7 +140,7 @@ Then navigate to the project directory, and run `http-server`.
 
 Open your browser and go to the provided local server URL (typically http://127.0.0.1:8080).
 
-### 3. Determine a user's connected network
+### 4. Determine a user's connected network
 
 [Detect the user's network](../how-to/connect/detect-metamask.md) to ensure all RPC requests are submitted to the currently connected network.
 Add the following code to `src/index.js`, which uses the [`eth_chainId`](/wallet/reference/eth_chainId)
@@ -159,7 +159,7 @@ function handleChainChanged(chainId) {
 }
 ```
 
-### 4. Access an account
+### 5. Access an account
 
 To interact with Ethereum on the user's behalf, such as sending transactions or requesting balances, your dapp needs to [access the user's accounts](../how-to/connect/access-accounts) by calling [`eth_requestAccounts`](/wallet/reference/eth_requestaccounts).
 
