@@ -158,6 +158,7 @@ function handleChainChanged(chainId) {
   window.location.reload();
 }
 ```
+For more information on Chain IDs, see [Detect a user's network](../tutorials/javascript-dapp-simple.md)
 
 ### 5. Access an account
 
