@@ -257,8 +257,6 @@ The following HTML code displays the button and the current account:
 <h2>Account: <span class="showAccount"></span></h2>
 ```
 
-For more information on connecting MetaMask to your dapp, see [Access a user's accounts](/wallet/how-to/connect/access-accounts/)
-
 ## Example simple dapp 
 
 Using the following project structure, you can run a build process to bundle your JavaScript code and copy your HTML file into the `dist` directory:
