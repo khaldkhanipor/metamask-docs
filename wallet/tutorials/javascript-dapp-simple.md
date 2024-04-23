@@ -164,7 +164,7 @@ function handleChainChanged(chainId) {
 To interact with Ethereum on the user's behalf, such as sending transactions or requesting balances, your dapp needs to [access the user's accounts](../how-to/connect/access-accounts) by calling [`eth_requestAccounts`](/wallet/reference/eth_requestaccounts).
 
 Add the following code to `src/index.js`, which creates a button to allow users to connect to MetaMask from your dapp.
-Selecting the button activates the call to `eth_requestAccounts`, allowing you to access to user's accounts.
+Selecting the button activates the call to `eth_requestAccounts`, allowing you to access the user's accounts.
 
 ```jsx title="index.js"
 // You should only attempt to request the user's account in response to user interaction, such as
@@ -197,7 +197,7 @@ async function getAccount() {
 }
 ```
 
-The following HTML code displays the button and the current account:
+Add the following HTML code to the body of `dist/index.html`, which displays the button and the current account:
 
 ```html title="index.html"
 <!-- Display a connect button and the current account -->
